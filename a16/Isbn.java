@@ -5,10 +5,6 @@
  * */
 
 public class Isbn{
-    /**
-     * main method - no comment
-     * @param args parameters passed by parent process
-     * */
     public static void main(String[] args){
         
         // input validation
@@ -38,8 +34,5 @@ public class Isbn{
         }else{
             System.out.println(isbn + " ist eine fehlerhafte ISBN\nchecksum sollte '" + checksum + "' sein.");
         }
-        
-        // end
-        System.exit(0);
     }
 }
