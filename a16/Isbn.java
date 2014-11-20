@@ -24,15 +24,11 @@ public class Isbn{
             if(temp != -1){
                 sum += (c+1)%2 == 0 ? temp*3 : temp;
                 c++;
-            }           
+            }
         }
         checksum = 10-(sum%10);
 
         // output result
-        if(checksum == Character.getNumericValue(isbn.charAt(isbn.length()-1))){
-            System.out.println(isbn + " ist eine gültige ISBN.");
-        }else{
-            System.out.println(isbn + " ist eine fehlerhafte ISBN\nchecksum sollte '" + checksum + "' sein.");
-        }
+        System.out.println((checksum == Character.getNumericValue(isbn.charAt(isbn.length()-1))) ? return isbn + " ist eine gültige ISBN." : return isbn + " ist eine fehlerhafte ISBN\nchecksum sollte '" + checksum + "' sein.")
     }
 }
